@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
+require "open-uri"
 
 Certificate.create!(
   activity_description: "Semana de extensão Semex",
@@ -16,3 +16,6 @@ Certificate.create!(
   activity_description: "Semana de extensão Semex1",
   hours: 20
 )
+
+
+

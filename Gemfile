@@ -32,6 +32,8 @@ gem 'simple_form'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise'
 
+gem 'cloudinary', '~> 1.16.0'
+
 gem 'dotenv-rails', groups: [:development, :test]
 
 group :development, :test do

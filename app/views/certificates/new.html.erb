@@ -1,0 +1,9 @@
+<div class="container mt-5 p-2">
+  <h2>Adicionar Certificado</h2>
+  <%= simple_form_for(@certificate) do |f| %>
+    <%= f.input :activity_description, label: 'Atividade' %>
+    <%= f.input :hours, label: 'Horas' %>
+    <%= f.input :certifications, label: 'Upload Certificado',  as: :file %>
+    <%= f.submit :Submit %>
+  <% end %>
+</div>
