@@ -1,0 +1,34 @@
+<div class="container mt-5 p-4">
+  <h2>Atividades Extracurriculares</h2>
+
+  <%= link_to '+Adicionar Documento' %>
+  <hr>
+
+  <table>
+    <tr>
+      <th>
+        Documento
+      </th>
+      <th style="width: 50%;">
+        Atividades
+      </th>
+      <th>
+        Horas
+      </th>
+      <th>
+        Status
+      </th>
+
+    <% @certificates.each do |certificate| %>
+      <tr></tr>
+      </tr>
+        <td></td>
+        <td><%= certificate.activity_description %></td>
+        <td><%= certificate.hours %>
+        <td><%= certificate.status ? "Aprovado" : "Pendente" %></td>
+      <tr>
+    <% end %>
+
+    </tr>
+  </table>
+</div>
