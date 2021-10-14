@@ -14,8 +14,7 @@ Certificate.create!(
 
 Certificate.create!(
   activity_description: "Semana de extensão Semex1",
-  hours: 20
-)
+  hours: 205
 
 
 
