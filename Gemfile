@@ -34,6 +34,8 @@ gem 'devise'
 
 gem 'cloudinary', '~> 1.16.0'
 
+gem 'carrierwave', '~> 2.0'
+
 gem 'dotenv-rails', groups: [:development, :test]
 
 group :development, :test do

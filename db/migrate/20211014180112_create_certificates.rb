@@ -4,6 +4,7 @@ class CreateCertificates < ActiveRecord::Migration[6.0]
       t.string :activity_description
       t.integer :hours
       t.boolean :status, default: false, null: false
+      t.string :attachment
 
       t.timestamps
     end

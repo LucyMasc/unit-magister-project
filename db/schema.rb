@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 2021_10_14_212413) do
     t.string "activity_description"
     t.integer "hours"
     t.boolean "status", default: false, null: false
+    t.string "attachment"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

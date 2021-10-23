@@ -1,9 +1,21 @@
 <div class="container mt-5 p-2">
+  <% if !@certificate.errors.empty? %>
+   <div class = "alert alert-error">
+
+      <ul>
+         <% @certificate.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+         <% end %>
+      </ul>
+
+   </div>
+<% end %>
+
   <h2>Adicionar Certificado</h2>
-  <%= simple_form_for(@certificate) do |f| %>
+  <%= simple_form_for @certificate, multipart: true  do |f| %>
     <%= f.input :activity_description, label: 'Atividade' %>
     <%= f.input :hours, label: 'Horas' %>
-    <%= f.input :certifications, label: 'Upload Certificado',  as: :file %>
+    <%= f.file_field :attachment %>
     <%= f.submit :Submit %>
   <% end %>
 </div>

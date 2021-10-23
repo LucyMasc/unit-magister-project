@@ -1,3 +1,4 @@
 class Certificate < ApplicationRecord
-  has_one_attached :certification
+  mount_uploader :attachment, AttachmentUploader
+  validates :activity_description, presence: true
 end

@@ -22,7 +22,7 @@
     <% @certificates.each do |certificate| %>
       <tr></tr>
       </tr>
-        <td></td>
+        <td><%= link_to "#{certificate.attachment_identifier}", certificate.attachment_url %></td>
         <td><%= certificate.activity_description %></td>
         <td><%= certificate.hours %>
         <td><%= certificate.status ? "Aprovado" : "Pendente" %></td>
