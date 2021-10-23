@@ -8,7 +8,8 @@
         </button>
       </div>
       <div class="modal-body">
-        <%= simple_form_for :certificate, multipart: true  do |f| %>
+        <%# below had to put url because it was not get the route POST /certificates %>
+        <%= simple_form_for :certificate, url: :certificates, multipart: true  do |f| %>
         <%= f.input :activity_description, label: 'Atividade' %>
         <%= f.input :hours, label: 'Horas' %>
         <%= f.file_field :attachment %>
