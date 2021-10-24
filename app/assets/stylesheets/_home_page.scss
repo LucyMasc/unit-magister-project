@@ -1,5 +1,29 @@
-th{
-  text-align: center;
+table{
+  width: 100%;
+  // background-color: lightblue;
+  border: 0.5px solid grey;
+  box-shadow: 1px 6px 21px 7px rgba(0,0,0,0.18);
+  table-layout: fixed;
+  // max-width: 500px
 }
+
+th {
+  background-color: #14279B;
+  color: white;
+}
+td{
+  // word-break: break-all;
+  // word-wrap:break-word;
+  white-space:nowrap;
+  overflow: hidden;
+}
+
+th, td{
+  text-align: center;
+  padding: 5px;
+  border: 0.5px solid grey;
+
+}
+
 
 

@@ -16,7 +16,7 @@ class CertificatesController < ApplicationController
   def create
     @certificate = Certificate.new(certificate_params)
     if @certificate.save
-      redirect_to certificate_path(@certificate), notice: "The resume #{@certificate.activity_description} has been uploaded."
+      redirect_to certificates_path, notice: "The resume #{@certificate.activity_description} has been uploaded."
     else
       render new
     end
