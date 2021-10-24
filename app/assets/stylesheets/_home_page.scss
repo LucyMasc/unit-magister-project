@@ -43,3 +43,23 @@ td {
   color: #3c415e;
   text-decoration: none;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  text-align: center;
+}
+
+.grid > span {
+  padding: 8px 4px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  // white-space: nowrap;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #a2d2ff;
+}

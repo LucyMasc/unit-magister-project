@@ -11,17 +11,9 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
 
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <%= render 'shared/navbar' %>
-    <div class="container" style="position: absolute; margin-top: 20px; left: 800px;">
-    <div >
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-    </div>
-
-    </div>
+    <%= render 'shared/flashes' %>
     <%= yield %>
-
-
   </body>
 </html>
