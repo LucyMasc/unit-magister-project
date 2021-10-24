@@ -22,7 +22,7 @@
       </th>
 
     <% @certificates.each do |certificate| %>
-    <% if current_user.certificates %>
+    <% if current_user == certificate.user %>
       <tr></tr>
       </tr>
         <td><%= link_to "#{certificate.attachment_identifier}", certificate.attachment_url %></td>
