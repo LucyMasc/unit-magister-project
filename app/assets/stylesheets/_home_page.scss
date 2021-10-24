@@ -1,29 +1,8 @@
-table {
-  width: 100%;
-  // background-color: lightblue;
-  border: 0.5px solid grey;
-  box-shadow: 1px 6px 21px 7px rgba(0, 0, 0, 0.18);
-  table-layout: fixed;
-  margin-top: 20px;
-  // max-width: 500px
-}
-
-th {
-  background-color: #9d9d9d;
-  color: white;
-}
 td {
   // word-break: break-all;
   // word-wrap:break-word;
   white-space: nowrap;
   overflow: hidden;
-}
-
-th,
-td {
-  text-align: center;
-  padding: 5px;
-  border: 0.5px solid grey;
 }
 
 .add-doc {
@@ -61,5 +40,5 @@ td {
 }
 
 .header {
-  background-color: #a2d2ff;
+  background-color: #9d9d9d;
 }
