@@ -1,8 +1,8 @@
 <div class="container mt-5 p-4">
   <h2>Atividades Extracurriculares</h2>
-   <%= render "form"%>
-  <button type="button" data-toggle="modal" data-target="#exampleModal">
-    <%= link_to '+Adicionar Documento', new_certificate_path, :remote => true, "data-toggle" => "modal", "data-target" => "my-modal" %>
+   <%= render partial: "form"%>
+  <button type="button" class="add-doc" data-toggle="modal" data-target="#exampleModal">
+    <%= link_to '+Adicionar Documento', new_certificate_path, :remote => true, "data-toggle" => "modal", "data-target" => "my-modal", class:"linkto" %>
   </button>
   <hr>
 
@@ -22,6 +22,7 @@
       </th>
 
     <% @certificates.each do |certificate| %>
+    <% if current_user.certificates %>
       <tr></tr>
       </tr>
         <td><%= link_to "#{certificate.attachment_identifier}", certificate.attachment_url %></td>
@@ -29,6 +30,7 @@
         <td><%= certificate.hours %>
         <td><%= certificate.status ? "Aprovado" : "Pendente" %></td>
       <tr>
+    <% end %>
     <% end %>
 
     </tr>

@@ -1,29 +1,45 @@
-table{
+table {
   width: 100%;
   // background-color: lightblue;
   border: 0.5px solid grey;
-  box-shadow: 1px 6px 21px 7px rgba(0,0,0,0.18);
+  box-shadow: 1px 6px 21px 7px rgba(0, 0, 0, 0.18);
   table-layout: fixed;
+  margin-top: 20px;
   // max-width: 500px
 }
 
 th {
-  background-color: #9D9D9D;
+  background-color: #9d9d9d;
   color: white;
 }
-td{
+td {
   // word-break: break-all;
   // word-wrap:break-word;
-  white-space:nowrap;
+  white-space: nowrap;
   overflow: hidden;
 }
 
-th, td{
+th,
+td {
   text-align: center;
   padding: 5px;
   border: 0.5px solid grey;
-
 }
 
+.add-doc {
+  background-color: #e3e7f1;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 10px 0 0;
+}
 
+.linkto {
+  color: grey;
+}
 
+.linkto:hover {
+  color: #3c415e;
+  text-decoration: none;
+}

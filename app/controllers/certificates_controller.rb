@@ -15,10 +15,11 @@ class CertificatesController < ApplicationController
 
   def create
     @certificate = Certificate.new(certificate_params)
+    @certificate.user = current_user
     if @certificate.save
-      redirect_to certificates_path, notice: "The resume #{@certificate.activity_description} has been uploaded."
+      redirect_to certificates_path, notice: "The certificate #{@certificate.activity_description} has been uploaded."
     else
-      render new
+      redirect_to root_path, notice: "Não foi possivel salvar o arquivo. Verifique o formato e tente novamente."
     end
   end
 
