@@ -18,6 +18,7 @@
     <span class="header">
       <strong>Status</strong>
     </span>
+    <% total = 0  %>
     <% @certificates.each do |certificate| %>
     <% if current_user == certificate.user %>
 
@@ -25,13 +26,15 @@
         <span><%= certificate.activity_description %></span>
         <span><%= certificate.hours %></span>
         <span><%= certificate.status ? "Aprovado" : "Pendente" %></span>
+        <% if certificate.status %>
+        <% total += certificate.hours %>
+        <% end %>
 
     <% end %>
     <% end %>
-    <span>Total aprovado</span>
+    <span><strong>Total aprovado</strong></span>
     <span></span>
-    <% total = 0  %>
-    <span>Aqui vai o somatorio</span>
+    <span><%= total %></span>
     <span></span>
   </div>
 
