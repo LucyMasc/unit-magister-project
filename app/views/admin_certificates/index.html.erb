@@ -1,0 +1,6 @@
+<div class="container mt-5">
+  <% @certificates.each do |certificate| %>
+  <%= link_to "#{certificate.hours} horas de #{certificate.user.email}", admin_certificate_path(certificate), method: 'PATCH' %><br>
+<%end%>
+</div>
+
